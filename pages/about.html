@@ -45,125 +45,110 @@
         #contact-links{
             margin-bottom: 10rem;
         }
-        @media (max-width: 428px){
-          .flexbox {
+        @media (max-width:460px){
+            .flexbox{
             display: block;
             text-align: center;
-          }
-
-          .container img {
-            width: 100%;
-            height: auto; /* To maintain aspect ratio */
-          }
-
-          #contact-links {
-            padding-bottom: 100px;
-          }
+            }
+            #contact-links{
+                padding-bottom: 100px;
+            }
         }
-
     </style>
 </head>
 <body id="main-container" class="container-fluid m-0 p-0">
-    <!-- NAV -->
-    <nav id="navbar" class="navbar fixed-top navbar-expand-lg justify-content-center align-items-center" data-bs-theme="light">
-        <div class="container-fluid">
-        <h3><b>&#169;skincare</b></h3>
-        <a class="navbar-brand" href="#"> </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-                </li>
-            </ul>
-        </div>
-        <div class="products">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./toner.html">Toner</a></li>
-                    <li><a class="dropdown-item" href="./cleanser.html">Cleanser</a></li>
-                    <li><a class="dropdown-item" href="./moisturizer.html">Moisturizer </a></li>
-                    <li><a class="dropdown-item" href="./serum.html">Serum</a></li>
-                </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="menu">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="./contactus.html">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-            <div class="search-container d-flex ms-auto">
-                <form action="#">
-                  <input type="text" placeholder="Search..." name="search">
-                </form>
-            </div>                    
-            <div>
-                <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        </div>
-    </nav>
-    <!-- MAIN -->
-    <div class="flexbox">
-      <div class="container mt-5 pt-5">
-          <h3 class="mt-5 text-center">Our Glow Story</h3>
-          <div id="abouttop" class="px-3 mt-5">
-              <p><b>&#169;skincare</b> was founded in Japan in 1982 with the mission to forge new frontiers in advanced skin cell science. Based upon decades of research and with a sophisticated combination of cutting-edge Japanese technology and precious ingredients, scientists unlocked the power of Skin Intelligence - skin’s innate ability to distinguish between good and bad stimuli to achieve and maintain its ideal condition.</p>
-              <p><b>&#169;skincare</b> products were created to empower skin to reach this highly desired state of harmony – the key to skin’s radiance, and optimal qualities of texture, tone, and contour.</p>
-              <p>Luxurious in every aspect, from masterfully crafted formulations to highly sensorial experiences, <b>&#169;skincare</b> (“The key to skin’s beauty”) adopted the global language of luxury, French. The brand is coveted by women around the world for its power to unlock skin’s innermost potential and, ultimately, transform skin and reveal the radiance within.</p>
-          </div>
-          <div class="text-center mt-5">
-              <h3 class="fst-italic p-3">"Beauty inside and out."</h3>
-              <p class="mb-5">At &#169;skincare we believe we have a responsibility to be our best selves by taking care of our bodies and showing compassion to others in need.  &#169;skincare customers are beautiful inside and out.</p>
-              <p class="mb-5">&#169;skincare was born in 2017 with the aim of helping men and women fight blemish-prone skin through gentle, ingredient-led formulas and simple routines. Launching initially with one product, the brand has now expanded to a product range of over twenty.</p>
-          </div>
-      </div>
-      <div class="container mt-5">
-          <div class="row">
-              <div class="col-md-6">
-                  <img src="/img/Black.jpg" alt="about1" data-aos="fade-up-left" class="img-fluid">
-              </div>
-              <div id="aboutmid" class="col-md-6 px-3">
-                  <p><b>&#169;skincare</b> is a skincare brand dedicated to delivering premium skincare products that focus on a simple skincare routine to easily achieve healthy, glowing skin.</p>
-                  <p>So, we developed beauty products that simplify skincare in order to win back time and declutter beauty regimens. Because truthfully, when it comes to skincare, it is not about following a certain number of steps but rather having skincare products that work. As the saying goes: Less is more.</p>
-                  <p>We know that everyone’s skin is different, so we strive to find solutions that cater to everyone's specific needs and spend years on product development to provide a luxurious quality product.</p>
-              </div>
-          </div>
-      </div>
-      <div class="container mt-5">
-          <div class="row">
-              <div class="col-md-6">
-                  <img src="/img/Blue.jpg" alt="about1" data-aos="fade-up-right" class="img-fluid">
-              </div>
-              <div id="text-body" class="col-md-6 px-3 text-center">
-                  <h3 class="fst-italic p-3">"You, our dear customers, are the core of everything we do."</h3>
-                  <p class="mb-5">We also give importance to suggestions and feedback about our service and product development in order to serve you better.</p>
-                  <p class="mb-5">Let's be real. You shouldn't have to choose between health and beauty.</p>
-                  <p class="mb-5">&#169;skincare is a woman-owned, founded and run company. Our simple line of super clean, naturally preserved, gluten-free skin care is powered by incredibly effective natural ingredients like eggshell membrane and snow mushroom extract. We designed these healthy skin care products to help you feel more confident and beautiful in your own skin, naturally.</p>
-                  <div class="d-flex justify-content-center gap-3" data-aos="fade-up">
-                      <img src="./images/review1.png" class="img-fluid w-25">
-                      <img src="./images/review2.png" class="img-fluid w-25">
-                      <img src="./images/review3.png" class="img-fluid w-25">
-                  </div>
-              </div>
-          </div>
+<!-- NAV -->
+<nav id="navbar" class="navbar fixed-top navbar-expand-lg justify-content-center align-items-center" data-bs-theme="light">
+  <div class="container-fluid">
+  <h3><b>&#169;skincare</b></h3>
+  <a class="navbar-brand" href="#"> </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div>
+      <ul class="navbar-nav">
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="./about.html">About</a>
+          </li>
+      </ul>
+  </div>
+  <div class="products">
+      <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./toner.html">Toner</a></li>
+              <li><a class="dropdown-item" href="./cleanser.html">Cleanser</a></li>
+              <li><a class="dropdown-item" href="./moisturizer.html">Moisturizer </a></li>
+              <li><a class="dropdown-item" href="./serum.html">Serum</a></li>
+          </ul>
+          </li>
+      </ul>
+  </div>
+  <div class="menu">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="./contactus.html">Contact Us</a>
+          </li>
+      </ul>
+  </div>
+      <div class="search-container d-flex ms-auto">
+          <form action="#">
+            <input type="text" placeholder="Search..." name="search">
+          </form>
+      </div>                    
+      <div>
+          <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+          </button>
       </div>
   </div>
-  
+  </div>
+</nav>
+    <!-- MAIN -->
+    <div class="flexbox">
+      <div class="container-fluid d-flex flex-row mt-5 pt-5">
+          <h3 class="w-50 mt-5 text-end align-self-center">Our Glow Story</h3>
+          <div id="abouttop" class="px-5 mt-5 align-self-center">
+              <p><b>&#169;skincare</b> was founded in Japan in 1982 with the mission to forge new frontiers in advanced skin cell science. Based upon decades of research and with a sophisticated combination of cutting-edge Japanese technology and precious ingredients, scientists unlocked the power of Skin Intelligence - skin’s innate ability to distinguish between good and bad stimuli to achieve and maintain its ideal condition.</p>
+              <p><b>&#169;skincare</b> products were created to empower skin to reach this highly desired state of harmony – the key to skin’s radiance, and optimal qualities of texture, tone and contour.</p>
+              <p>Luxurious in every aspect, from masterfully crafted formulations to highly sensorial experiences, <b>&#169;skincare</b>(“The key to skin’s beauty”) adopted the global language of luxury, French. The brand is coveted by women around the world for its power to unlock skin’s innermost potential and, ultimately, transform skin and reveal the radiance within.</p>
+          </div>
+          <img class="w-25" src="./images/aboutus1.png" alt="about1" data-aos="zoom-in-left">
+      </div>
+      <div class="container-fluid text-center">
+          <h3 class="fst-italic p-3">"Beauty inside and out."</h3>
+          <p class="mb-5">At &#169;skincare we believe we have a responsibility to be our best selves by taking care of our bodies and showing compassion to others in need.  &#169;skincare customers are beautiful inside and out.</p>
+          <p class="mb-5">&#169;skincare was born in 2017 with the aim of helping men and women fight blemish prone skin through gentle, ingredient-led formulas and simple routines. Launching initially with one product, the brand has now expanded to a product range of over twenty.</p>
+      </div>
+      <div  class="container-fluid d-flex flex-row mt-5 pt-5">
+          <img class="w-25" src="./images/aboutus2.png" alt="about1" data-aos="fade-up-left">
+          <div id="aboutmid" class="px-5 mt-5 align-self-center">
+              <p><b>&#169;skincare</b> is a skincare brand dedicated in delivering premium skincare products that focuses on simple skincare routine to easily achieve healthy, glowing skin.</p>
+              <p>So, we developed beauty products that simplify skincare in order to win back time and declutter beauty regimens. Because truthfully, when it comes to skincare, it is not about following a certain number of steps but rather having skincare products that work. As the saying goes: Less is more.</p>
+              <p>We know that everyone’s skin is different so we strive to find solutions that cater to everyone's specific needs and spend years on product development to provide a luxurious quality product.</p>
+          </div>
+          <img class="w-25" src="./images/aboutus3.png" alt="about1" data-aos="fade-up-right">
+      </div>
+      <div id="text-body" class="container-fluid p-5 text-center">
+          <h3 class="fst-italic p-3">"You, our dear customers, are the core of everything we do."</h3>
+          <p class="mb-5">We also give importance to suggestions and feedback about our service and product development in order to serve you better.</p>
+          <p class="mb-5">Let's be real. You shouldn't have to choose between health and beauty.</p>
+          <p class="mb-5">&#169;skincare is a woman-owned, founded and run company. Our simple line of super clean, naturally preserved, gluten-free skin care is powered by incredibly effective natural ingredients like eggshell membrane and snow mushroom extract. We designed these healthy skin care products to help you feel more confident and beautiful in your own skin, naturally.</p>
+          <div class="d-flex flex-row container-fluid justify-content-center gap-5" data-aos="fade-up">
+              <img src="./images/review1.png" class="w-25">
+              <img src="./images/review2.png" class="w-25">
+              <img src="./images/review3.png" class="w-25">
+
+          </div>
+      </div>
+    </div>
     <div id="contact-links" background-color="#A9DEF9">
         <!-- Footer -->
         <div
@@ -171,36 +156,11 @@
                 style="background-color: #A9DEF9"
                 >
           <!-- Section: Social media -->
-          <section
-                   class="d-flex justify-content-between p-4"
-                   style="background-color: #FFdfea"
-                   >
+          <section class="d-flex justify-content-between p-4" style="background-color: #FFdfea" >
             <!-- Left -->
             <div class="me-5 text-black">
-              <span>Get connected with us on social networks:</span>
+              <p class="fst-italic">“Let your light shine so bright that others can’t help but to glow in your presence.”</p>
             </div>
-            <!-- Left -->
-      
-            <div>
-                <a href="" class="text-white me-4">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="text-white me-4">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="text-white me-4">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="text-white me-4">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="" class="text-white me-4">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="" class="text-white me-4">
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
           </section>
           <!-- Section: Social media -->
       
@@ -242,24 +202,16 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto ">
                   <!-- Links -->
-                  <h6 class="text-uppercase fw-bold">Useful links</h6>
-                  <hr
-                      class="mb-4 mt-0 d-inline-block mx-auto"
-                      style="width: 60px; background-color: #E4C1F9; height: 2px"
-                      />
-                  <p>
-                    <a href="#!" class="text-black">Your Account</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-black">Become an Affiliate</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-black">Shipping Rates</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-black">Help</a>
-                  </p>
-                </div>
+                  <h6 class="text-uppercase fw-bold">social media</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #E4C1F9; height: 2px"
+                  />
+                  <p><a href="#" class="text-black">Facebook</a></p>
+                  <p><a href="#" class="text-black">X</a></p>
+                  <p><a href="#" class="text-black">Instagram</a></p>
+                  <p><a href="#" class="text-black">Tiktok</a></p>
+            </div>
                 <!-- Grid column -->
       
                 <!-- Grid column -->
@@ -288,126 +240,125 @@
     <div class="chat-button">
         <script src="//code.tidio.co/ssn21vmhlt7nfxfdrhk0rgpxapss0mtb.js" async></script>
     </div>             
-<!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container my-5">
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
 
-  <footer class="text-center">
-  <!-- Grid container -->
-  <div class="container p-4 pb-0">
-    <!-- Section: Form -->
-    <section class="">
-      <form action="">
-        <!--Grid row-->
-        <div class="row d-flex justify-content-center">
-          <!--Grid column-->
-          <div class="col-auto">
-            <p class="pt-2">
-              <strong>Sign up for our newsletter</strong>
-            </p>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-5 col-12">
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="form5Example2" class="form-control" />
-              <label class="form-label" for="form5Example2">Email address</label>
+      <footer class="text-center">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form5Example2" class="form-control" />
+                  <label class="form-label" for="form5Example2">Email address</label>
+                </div>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
             </div>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-auto">
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-primary mb-4">
-              Subscribe
-            </button>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </form>
-    </section>
-    <!-- Section: Form -->
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: #FCF6BD">
-    ©skincare | 2023 Copyright:
-    <a class="text-dark" href="#">MP1-WD87P</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-</div>
-</body>
-<!-- insert modal -->
-<!-- modal start -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-<div class="modal-content">
-    <div class="modal-header">
-        <h4 class="modal-title text-bg-dark">RestoDemo Records</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #FCF6BD">
+        ©skincare | 2023 Copyright:
+        <a class="text-dark" href="#">MP1-WD87P</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+      
     </div>
-      <!-- Modal body -->
-    <div class="modal-body">
-    <table class="table table-striped">
-        <thead>
+    <!-- End of .container -->  
+    </div>           
+    </body>
+    <!-- MODAL START -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title text-bg-dark">RestoDemo Records</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+            <!-- Modal body -->
+          <div class="modal-body">
+          <table class="table table-striped">
+              <thead>
+                  <tr>
+                      <th>Item ID</th>
+                      <th>Item Name</th>
+                      <th>Item Price</th>
+                      <th>Item Category</th>
+                      <th>Action</th>
+                  </tr>
+              </thead>
+          <tbody>
             <tr>
-                <th>Item ID</th>
-                <th>Item Name</th>
-                <th>Item Price</th>
-                <th>Item Category</th>
-                <th>Action</th>
+              <td>F01</td>
+              <td>Adobo</td>
+              <td>150</td>
+              <td>Viand</td>
+              <td>
+                  <button class="btn btn-info">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+              </td>  
             </tr>
-        </thead>
-    <tbody>
-      <tr>
-        <td>F01</td>
-        <td>Adobo</td>
-        <td>150</td>
-        <td>Viand</td>
-        <td>
-            <button class="btn btn-info">Edit</button>
-            <button class="btn btn-danger">Delete</button>
-        </td>  
-      </tr>
-      <tr>
-        <td>F02</td>
-        <td>Sisig</td>
-        <td>100</td>
-        <td>Viand</td>
-        <td>
-            <button class="btn btn-info">Edit</button>
-            <button class="btn btn-danger">Delete</button>
-        </td> 
-      </tr>
-      <tr>
-        <td>F03</td>
-        <td>Afritada</td>
-        <td>168</td>
-        <td>Viand</td>
-        <td>
-            <button class="btn btn-info">Edit</button>
-            <button class="btn btn-danger">Delete</button>
-        </td>  
-      </tr>
-    </tbody>
-  </table>
-  </div>
-    <!-- Modal footer -->
-    <div class="modal-footer">
-    <button type="button" class="btn btn-info">Add</button>
-    </div>
-</div>
-</div>
-</div>
+            <tr>
+              <td>F02</td>
+              <td>Sisig</td>
+              <td>100</td>
+              <td>Viand</td>
+              <td>
+                  <button class="btn btn-info">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+              </td> 
+            </tr>
+            <tr>
+              <td>F03</td>
+              <td>Afritada</td>
+              <td>168</td>
+              <td>Viand</td>
+              <td>
+                  <button class="btn btn-info">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+              </td>  
+            </tr>
+          </tbody>
+        </table>
+        </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+          <button type="button" class="btn btn-info">Add</button>
+          </div>
+      </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
-</body>
 </html>
