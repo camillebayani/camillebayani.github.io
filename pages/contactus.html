@@ -183,7 +183,7 @@
         </div>
         <div class="row">
           <div class="column" id="column-left">
-            <img class="rounded-4" src="./images/contact-image.png" style="height: 30rem;">
+            <img class="rounded-4" src="../images/contact-image.png" style="height: 30rem;">
           </div>
           <div class="column">
             <form action="#">
@@ -352,65 +352,54 @@
 </footer>
 </div>
 </body>
-<!-- insert modal -->
-<!-- modal start -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-<div class="modal-content">
-    <div class="modal-header">
-        <h4 class="modal-title text-bg-dark">RestoDemo Records</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<!-- Modal -->
+<div class="modal fade" id="addtocart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h4>©skincare</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+        <!-- Modal body -->
+      <div class="modal-body">
+      <table class="table table-striped text-center">
+          <thead>
+              <tr>
+                  <th>Item Name</th>
+                  <th>Item Price</th>
+                  <th>Quantity</th>
+              </tr>
+          </thead>
+      <tbody>
+        <tr>
+          <td>Glow Serum</td>
+          <td>Php499</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Balancing Toner</td>
+          <td>Php399</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Luxe Cream Moisturizer</td>
+          <td>Php899</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Gentle Skin Cleanser</td>
+          <td>Php279</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
     </div>
-      <!-- Modal body -->
-    <div class="modal-body">
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Item ID</th>
-                <th>Item Name</th>
-                <th>Item Price</th>
-                <th>Item Category</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-    <tbody>
-      <tr>
-        <td>F01</td>
-        <td>Adobo</td>
-        <td>150</td>
-        <td>Viand</td>
-        <td>
-            <button class="btn btn-info">Edit</button>
-            <button class="btn btn-danger">Delete</button>
-        </td>  
-      </tr>
-      <tr>
-        <td>F02</td>
-        <td>Sisig</td>
-        <td>100</td>
-        <td>Viand</td>
-        <td>
-            <button class="btn btn-info">Edit</button>
-            <button class="btn btn-danger">Delete</button>
-        </td> 
-      </tr>
-      <tr>
-        <td>F03</td>
-        <td>Afritada</td>
-        <td>168</td>
-        <td>Viand</td>
-        <td>
-            <button class="btn btn-info">Edit</button>
-            <button class="btn btn-danger">Delete</button>
-        </td>  
-      </tr>
-    </tbody>
-  </table>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+      <button type="button" class="btn btn-info">Check Out</button>
+      </div>
   </div>
-    <!-- Modal footer -->
-    <div class="modal-footer">
-    <button type="button" class="btn btn-info">Add</button>
-    </div>
+  </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>

@@ -120,7 +120,7 @@
               <p><b>&#169;skincare</b> products were created to empower skin to reach this highly desired state of harmony – the key to skin’s radiance, and optimal qualities of texture, tone and contour.</p>
               <p>Luxurious in every aspect, from masterfully crafted formulations to highly sensorial experiences, <b>&#169;skincare</b>(“The key to skin’s beauty”) adopted the global language of luxury, French. The brand is coveted by women around the world for its power to unlock skin’s innermost potential and, ultimately, transform skin and reveal the radiance within.</p>
           </div>
-          <img class="w-25" src="./images/aboutus1.png" alt="about1" data-aos="zoom-in-left">
+          <img class="w-25" src="../images/aboutus1.png" alt="about1" data-aos="zoom-in-left">
       </div>
       <div class="container-fluid text-center">
           <h3 class="fst-italic p-3">"Beauty inside and out."</h3>
@@ -128,13 +128,13 @@
           <p class="mb-5">&#169;skincare was born in 2017 with the aim of helping men and women fight blemish prone skin through gentle, ingredient-led formulas and simple routines. Launching initially with one product, the brand has now expanded to a product range of over twenty.</p>
       </div>
       <div  class="container-fluid d-flex flex-row mt-5 pt-5">
-          <img class="w-25" src="./images/aboutus2.png" alt="about1" data-aos="fade-up-left">
+          <img class="w-25" src="../images/aboutus2.png" alt="about1" data-aos="fade-up-left">
           <div id="aboutmid" class="px-5 mt-5 align-self-center">
               <p><b>&#169;skincare</b> is a skincare brand dedicated in delivering premium skincare products that focuses on simple skincare routine to easily achieve healthy, glowing skin.</p>
               <p>So, we developed beauty products that simplify skincare in order to win back time and declutter beauty regimens. Because truthfully, when it comes to skincare, it is not about following a certain number of steps but rather having skincare products that work. As the saying goes: Less is more.</p>
               <p>We know that everyone’s skin is different so we strive to find solutions that cater to everyone's specific needs and spend years on product development to provide a luxurious quality product.</p>
           </div>
-          <img class="w-25" src="./images/aboutus3.png" alt="about1" data-aos="fade-up-right">
+          <img class="w-25" src="../images/aboutus3.png" alt="about1" data-aos="fade-up-right">
       </div>
       <div id="text-body" class="container-fluid p-5 text-center">
           <h3 class="fst-italic p-3">"You, our dear customers, are the core of everything we do."</h3>
@@ -142,9 +142,9 @@
           <p class="mb-5">Let's be real. You shouldn't have to choose between health and beauty.</p>
           <p class="mb-5">&#169;skincare is a woman-owned, founded and run company. Our simple line of super clean, naturally preserved, gluten-free skin care is powered by incredibly effective natural ingredients like eggshell membrane and snow mushroom extract. We designed these healthy skin care products to help you feel more confident and beautiful in your own skin, naturally.</p>
           <div class="d-flex flex-row container-fluid justify-content-center gap-5" data-aos="fade-up">
-              <img src="./images/review1.png" class="w-25">
-              <img src="./images/review2.png" class="w-25">
-              <img src="./images/review3.png" class="w-25">
+              <img src="../images/review1.png" class="w-25">
+              <img src="../images/review2.png" class="w-25">
+              <img src="../images/review3.png" class="w-25">
 
           </div>
       </div>
@@ -297,65 +297,55 @@
     <!-- End of .container -->  
     </div>           
     </body>
-    <!-- MODAL START -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h4 class="modal-title text-bg-dark">RestoDemo Records</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-            <!-- Modal body -->
-          <div class="modal-body">
-          <table class="table table-striped">
-              <thead>
-                  <tr>
-                      <th>Item ID</th>
-                      <th>Item Name</th>
-                      <th>Item Price</th>
-                      <th>Item Category</th>
-                      <th>Action</th>
-                  </tr>
-              </thead>
-          <tbody>
-            <tr>
-              <td>F01</td>
-              <td>Adobo</td>
-              <td>150</td>
-              <td>Viand</td>
-              <td>
-                  <button class="btn btn-info">Edit</button>
-                  <button class="btn btn-danger">Delete</button>
-              </td>  
-            </tr>
-            <tr>
-              <td>F02</td>
-              <td>Sisig</td>
-              <td>100</td>
-              <td>Viand</td>
-              <td>
-                  <button class="btn btn-info">Edit</button>
-                  <button class="btn btn-danger">Delete</button>
-              </td> 
-            </tr>
-            <tr>
-              <td>F03</td>
-              <td>Afritada</td>
-              <td>168</td>
-              <td>Viand</td>
-              <td>
-                  <button class="btn btn-info">Edit</button>
-                  <button class="btn btn-danger">Delete</button>
-              </td>  
-            </tr>
-          </tbody>
-        </table>
-        </div>
-          <!-- Modal footer -->
-          <div class="modal-footer">
-          <button type="button" class="btn btn-info">Add</button>
-          </div>
+    <!-- Modal -->
+<div class="modal fade" id="addtocart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h4>©skincare</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+        <!-- Modal body -->
+      <div class="modal-body">
+      <table class="table table-striped text-center">
+          <thead>
+              <tr>
+                  <th>Item Name</th>
+                  <th>Item Price</th>
+                  <th>Quantity</th>
+              </tr>
+          </thead>
+      <tbody>
+        <tr>
+          <td>Glow Serum</td>
+          <td>Php499</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Balancing Toner</td>
+          <td>Php399</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Luxe Cream Moisturizer</td>
+          <td>Php899</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Gentle Skin Cleanser</td>
+          <td>Php279</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+      <button type="button" class="btn btn-info">Check Out</button>
+      </div>
+  </div>
+  </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
