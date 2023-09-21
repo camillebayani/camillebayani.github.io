@@ -51,11 +51,12 @@
             flex-direction: column;
             gap: 10px;
             padding-left: 15%;
-            padding-right: 15%;
             text-align: center;
             }
             #aside{
-                text-align: center;
+              display: none;
+              padding: 0;
+              text-align: center;
             }
             #contact-links{
                 padding-bottom: 100px;
@@ -151,55 +152,49 @@
             <span class="carousel-control-next-icon"></span>
         </button>
     </div>  
-    <h2 class="my-5 text-center">&#169;skincare Signature Set</h2>      
-    <div id="cards-container" class="container-fluid d-flex align-items-center align-content-center pl-2">   
-        <section id="cards" class="container w-100">
-            <div class="card p-4 text-center" style="width: 250px; height: 350px;">
-                <img src="./images/card-toner.png" class="card-img-top rounded-2" alt="toner">
-                <div class="card-body">
-                <h5><u>Toner</u></h5>
-                <p class="card-text">Hyaluronic Toner</p>
-                <p class="card-subtitle"></p>
-                <div class="card-footer">
-                  Php299
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                  </svg>
-                </div>
-                </div>
+    <h2 class="my-5 text-center">&#169;skincare Signature Set</h2>       
+      <div id="cards-container" class="container-fluid d-flex gap-5 py-5 justify-content-center">
+        <div class="card justify-content-center text-center" style="width: 18rem;">
+            <img class="card-img-top" src="./images/toner2.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Balancing Toner</h5>
+              <p class="card-text">A toner can be an invaluable tool in your battle against blemishes.</p>
             </div>
-        </section>
-        <section id="cards" class="container">
-            <div class="card p-4 text-center" style="width: 250px; height: 350px;">
-                <img src="./images/card-serum.png" class="card-img-top rounded-2" alt="serum">
-                <div class="card-body">
-                <h5><u>Serum</u></h5>
-                <p class="card-text">Niacinamide+Zinc Serum</p>
-                <div class="card-footer">
-                  Php499
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                  </svg>
-                </div>
-                </div>
+            <div class="card-footer">
+              Php399
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
             </div>
-        </section>
-        <section id="cards" class="container">
-            <div class="card p-4 text-center" style="width: 250px; height: 350px;">
-                <img src="./images/card-pot.png" class="card-img-top rounded-2" alt="moisturizer">
-                <div class="card-body">
-                <h5>Moisturizer</h5>
-                <p class="card-text"><u>Moisture Barrier Cream</u></p>
-                <div class="card-footer">
-                  Php699
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                  </svg>
-                </div>
-                </div>
+          </div>
+        <div class="card justify-content-center text-center" style="width: 18rem;">
+          <img class="card-img-top" src="./images/serum8.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Niacinaserum</h5>
+            <p class="card-text">When you think of Sunday Riley, its culty Good Genes Lactic Acid Treatment may be one of the first things that comes to mind.</p>
+          </div>
+          <div class="card-footer">
+            Php499
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card justify-content-center text-center" style="width: 18rem;">
+          <img class="card-img-top" src="./images/moisturizer2.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Hyaluronic Boost</h5>
+            <p class="card-text">Packed with powerhouse hydrator hyaluronic acid, this moisturizer is a favorite among dermatologists.</p>
             </div>
+            <div class="card-footer">
+              Php399
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+            </div>
+        </div>
         </section>
-        <section id="aside">
+        <section id="aside" class="w-25 align-self-center">
             <h4>Prevent, Correct & Protect</h4>
             <p>Discover &#169;skincare's three-part, science-backed approach to younger-looking skin.</p>
             <p>Your skin is unique and no one knows its needs better than you. Create your personalized skincare routine—you can skip or double down on any step—with 3 to 5 products curated to your skin's needs.</p>
