@@ -45,13 +45,19 @@
         #contact-links{
             margin-bottom: 10rem;
         }
-        @media (max-width:460px){
+        @media (max-width:560px){
+            *{
+              padding: 0%;
+            }
             .flexbox{
             display: block;
             text-align: center;
             }
             #contact-links{
-                padding-bottom: 100px;
+              padding-bottom: 100px;
+            }
+            #abouttop,#aboutmid{
+              display: none;
             }
         }
     </style>
@@ -113,21 +119,21 @@
 </nav>
     <!-- MAIN -->
     <div class="flexbox">
-      <div class="container-fluid d-flex flex-row mt-5 pt-5">
+      <div id="abouttop" class="container-fluid d-xs-none d-sm-none d-md-flex flex-row mt-5 pt-5">
           <h3 class="w-50 mt-5 text-end align-self-center">Our Glow Story</h3>
-          <div id="abouttop" class="px-5 mt-5 align-self-center">
+          <div class="px-5 mt-5 align-self-center">
               <p><b>&#169;skincare</b> was founded in Japan in 1982 with the mission to forge new frontiers in advanced skin cell science. Based upon decades of research and with a sophisticated combination of cutting-edge Japanese technology and precious ingredients, scientists unlocked the power of Skin Intelligence - skin’s innate ability to distinguish between good and bad stimuli to achieve and maintain its ideal condition.</p>
               <p><b>&#169;skincare</b> products were created to empower skin to reach this highly desired state of harmony – the key to skin’s radiance, and optimal qualities of texture, tone and contour.</p>
               <p>Luxurious in every aspect, from masterfully crafted formulations to highly sensorial experiences, <b>&#169;skincare</b>(“The key to skin’s beauty”) adopted the global language of luxury, French. The brand is coveted by women around the world for its power to unlock skin’s innermost potential and, ultimately, transform skin and reveal the radiance within.</p>
           </div>
-          <img class="w-25" src="../images/aboutus1.png" alt="about1" data-aos="zoom-in-left">
+          <img id="imgtop" class="w-25" src="../images/aboutus1.png" alt="about1" data-aos="zoom-in-left">
       </div>
       <div class="container-fluid text-center">
-          <h3 class="fst-italic p-3">"Beauty inside and out."</h3>
+          <h3 class="fst-italic p-3 d-sm-block d-md-flex">"Beauty inside and out."</h3>
           <p class="mb-5">At &#169;skincare we believe we have a responsibility to be our best selves by taking care of our bodies and showing compassion to others in need.  &#169;skincare customers are beautiful inside and out.</p>
           <p class="mb-5">&#169;skincare was born in 2017 with the aim of helping men and women fight blemish prone skin through gentle, ingredient-led formulas and simple routines. Launching initially with one product, the brand has now expanded to a product range of over twenty.</p>
       </div>
-      <div  class="container-fluid d-flex flex-row mt-5 pt-5">
+      <div class="container-fluid d-sm-block d-md-flex flex-row mt-5 pt-5">
           <img class="w-25" src="../images/aboutus2.png" alt="about1" data-aos="fade-up-left">
           <div id="aboutmid" class="px-5 mt-5 align-self-center">
               <p><b>&#169;skincare</b> is a skincare brand dedicated in delivering premium skincare products that focuses on simple skincare routine to easily achieve healthy, glowing skin.</p>
@@ -151,10 +157,7 @@
     </div>
     <div id="contact-links" background-color="#A9DEF9">
         <!-- Footer -->
-        <div
-                class="text-center text-lg-start text-white"
-                style="background-color: #A9DEF9"
-                >
+        <div class="text-center text-lg-start text-white" style="background-color: #A9DEF9">
           <!-- Section: Social media -->
           <section class="d-flex justify-content-between p-4" style="background-color: #FFdfea" >
             <!-- Left -->
