@@ -200,7 +200,11 @@ h6 {
   }
 
   #header.header-top h1 {
-    font-size: 26px;
+    font-size: 35px;
+  }
+
+  #header.header-top h2 {
+    display: none;
   }
 }
 
@@ -292,6 +296,7 @@ h6 {
   position: fixed;
   right: 15px;
   top: 15px;
+  z-index: 999;
 }
 
 @media (max-width: 991px) {
@@ -313,7 +318,6 @@ h6 {
   bottom: 0;
   background: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
-  z-index: 999;
   margin-top: 0;
 }
 
