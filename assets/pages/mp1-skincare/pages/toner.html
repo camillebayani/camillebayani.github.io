@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#169;skincare (MP1 - Camille)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+            margin: 0;
+        }
+        #carousel{
+            background-color: #FFdfea;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            background-color: #FFdfea;
+            align-items: center;
+            position: absolute;
+            top: 0;
+        }
+        .search-container button{
+            float: right;
+            margin-top: 8px;
+            background: #ddd;
+            font-size: 15px;
+            }
+        .chat-button{
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+        }
+        footer{
+            background-color: #A9DEF9;
+            color: black;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        #contact-links{
+            margin-bottom: 5rem;
+        }
+        @media (max-width:560px){
+            #cards-container{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-left: 15%;
+            padding-right: 15%;
+            text-align: center;
+            }
+            #aside{
+                text-align: center;
+            }
+            #contact-links{
+                padding-bottom: 100px;
+            }
+        }
+    </style>
+</head>
+<body id="main-container" class="container-fluid m-0 p-0">
+    <!-- NAV -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg justify-content-center align-items-center" data-bs-theme="light">
+        <div class="container-fluid">
+        <h3><b>&#169;skincare</b></h3>
+        <a class="navbar-brand" href="#"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="products">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./toner.html">Toner</a></li>
+                        <li><a class="dropdown-item" href="./cleanser.html">Cleanser</a></li>
+                        <li><a class="dropdown-item" href="./moisturizer.html">Moisturizer </a></li>
+                        <li><a class="dropdown-item" href="./serum.html">Serum</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-container d-flex ms-auto">
+                <form action="#">
+                  <input class="rounded-2" type="text" placeholder="Search..." name="search">
+                </form>
+            </div>                    
+            <div>
+                <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#addtocart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+                
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- MAIN BODY -->
+    <div class="container-fluid text-center pt-5 mt-5">
+        <h4>Our Toner Top Picks</h4>
+        <p>_________</p>
+        <p>Today’s toner formulas are more advanced than ever before. Not only do they boast a ton of skincare benefits (like offering extra hydration, minimizing pores, and removing any traces of grime and oil, to name a few), toners deliver active ingredients straight to your face. A good toner is either acid-based (to exfoliate and resurface) or hydrating (to lock in moisture), according to board-certified dermatologist Lucy Chen, M.D. </p>
+        <p>To get the most out of your toner, it’s recommended to apply it after cleansing. Whether your skin is sensitive and looking for soothing benefits, acne-prone and needing excess oil removal, or dry and thirsting for more moisture, the right toner can target concerns and treat them accordingly.</p>
+    </div>
+    <div id="cards-container" class="container-fluid d-flex gap-5 py-5 justify-content-center">
+        <div class="card justify-content-center text-center" style="width: 18rem;">
+            <img class="card-img-top" src="../images/toner1.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Clarifying Toner</h5>
+              <p class="card-text">The clear, lightweight solution is slightly runny but is packed full with moisture.</p>
+            </div>
+            <div class="card-footer">
+              Php679
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+            </div>
+        </div>
+        <div class="card justify-content-center text-center" style="width: 18rem;">
+            <img class="card-img-top" src="../images/toner2.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Balancing Toner</h5>
+              <p class="card-text">A toner can be an invaluable tool in your battle against blemishes.</p>
+            </div>
+            <div class="card-footer">
+              Php399
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+            </div>
+        </div>
+        <div class="card justify-content-center text-center" style="width: 18rem;">
+            <img class="card-img-top" src="../images/toner3.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Glow Toner</h5>
+              <p class="card-text">Lauded for its anti-inflammatory properties, green tea can help reduce skin irritation, redness, and swelling.</p>
+            </div>
+            <div class="card-footer">
+              Php459
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+            </div>
+        </div>
+        <div class="card justify-content-center text-center" style="width: 18rem;">
+            <img class="card-img-top" src="../images/toner4.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Calming Toner</h5>
+              <p class="card-text">Designed to be used after cleansing, the antioxidant-rich elderberry toner helps balance and relax super-sensitive skin.</p>
+            </div>
+            <div class="card-footer">
+              Php379
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+            </div>
+        </div>
+    </div>
+    <div id="contact-links" background-color="#A9DEF9">
+      <!-- Footer -->
+      <div class="text-center text-lg-start text-white" style="background-color: #A9DEF9" >
+        <!-- Section: Social media -->
+        <section style="background-color: #FFdfea" >
+          <!-- Left -->
+          <div class="py-2 text-black text-center">
+            <p class="fst-italic">“Let your light shine so bright that others can’t help but to glow in your presence.”</p>
+          </div>
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Links  -->
+        <section class="text-black">
+          <div class="container text-center text-md-start m-2">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto ">
+                <!-- Content -->
+                <h4 class="fw-bold">&#169;skincare</h4>
+                <hr
+                    class="d-inline-block mx-auto"
+                    style="width: 60px; background-color: #E4C1F9; height: 2px"
+                    />
+              <h5>Glowing skin, naturally</h5>
+                <p>
+                  Our mission is to provide high quality products that are not tested on animals, leaping bunny approved and are for every skin type.
+                </p>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Products</h6>
+                <hr
+                    class="d-inline-block mx-auto"
+                    style="width: 60px; background-color: #E4C1F9 "
+                    />
+                <p><a href="./pages/toner.html" class="text-black">Toner</a></p>
+                <p><a href="./pages/cleanser.html" class="text-black">Cleanser</a></p>
+                <p><a href="./pages/moisturizer.html" class="text-black">Moisturizer</a></p>
+                <p><a href="./pages/serum.html" class="text-black">Serum</a></p>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto ">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">social media</h6>
+            <hr
+                class="d-inline-block mx-auto"
+                style="width: 60px; background-color: #E4C1F9; height: 2px"
+                />
+                <p><a href="#" class="text-black">Facebook</a></p>
+                <p><a href="#" class="text-black">X</a></p>
+                <p><a href="#" class="text-black">Instagram</a></p>
+                <p><a href="#" class="text-black">Tiktok</a></p>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Contact</h6>
+                <hr
+                    class="d-inline-block mx-auto"
+                    style="width: 60px; background-color: #E4C1F9; height: 2px"
+                    />
+                <p><i class="fas fa-home mr-3"></i>Makati City, PH 1212</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@skincare.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +63 917 123 4567</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      </div>
+      <!-- Footer -->
+    
+    </div>
+    <!-- End of .container -->                  
+  <div class="chat-button">
+      <script src="//code.tidio.co/ssn21vmhlt7nfxfdrhk0rgpxapss0mtb.js" async></script>
+  </div>    
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+
+  <footer class="text-center">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline">
+              <input type="email" id="form5Example2" class="form-control" placeholder="Email address">
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center" style="background-color: #FFdfea">
+    ©skincare | 2023 Copyright:
+    <a class="text-dark" href="#">MP1-WD87P</a>
+  </div>
+  <!-- Copyright -->
+</footer>   
+</div>           
+</body>
+<!-- MODAL START -->
+<!-- Modal -->
+<div class="modal fade" id="addtocart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h4>©skincare</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+        <!-- Modal body -->
+      <div class="modal-body">
+      <table class="table table-striped text-center">
+          <thead>
+              <tr>
+                  <th>Item Name</th>
+                  <th>Item Price</th>
+                  <th>Quantity</th>
+              </tr>
+          </thead>
+      <tbody>
+        <tr>
+          <td>Glow Serum</td>
+          <td>Php499</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Balancing Toner</td>
+          <td>Php399</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Luxe Cream Moisturizer</td>
+          <td>Php899</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Gentle Skin Cleanser</td>
+          <td>Php279</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+      <button type="button" class="btn btn-info">Check Out</button>
+      </div>
+  </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
